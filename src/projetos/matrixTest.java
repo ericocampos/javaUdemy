@@ -17,6 +17,9 @@ public class matrixTest {
 	public static void main(String[] args) {
 //		Criação do scanner
 		Scanner scan = new Scanner(System.in);
+
+//		Criação do utilitario
+		Utilitarios util = new Utilitarios();
 		
 //		Criação da matriz com 30 linhas (alunos) e 4 colunas (3 notas + média)
 		double[][] notas = new double[30][4];
@@ -35,7 +38,7 @@ public class matrixTest {
 			media = soma/3;
 			notas[row][3] = media;
 //			Limpa a tela para inserção de novas notas.
-			Utilitarios.limpaTela();
+			util.limpaTela();
 		}
 		
 //		Exibindo as médias salvas na matriz.
